@@ -1,0 +1,44 @@
+.myButton {
+    -fx-text-fill: white;
+    -fx-font-size: 30;
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+    -fx-border-width: 4;
+    -fx-background-insets: 4;
+    -fx-cursor: hand;
+}
+
+.myButton:hover {
+    -fx-background-color: #333333;
+    -fx-background-radius:0;
+}
+
+.frameMenu {
+    -fx-border-color: #999999;
+    -fx-border-width: 3px;
+}
+
+.menuButton {
+    -fx-background-size: 275px 169px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#collection { -fx-background-image: url("collection.jpg"); }
+#p911 { -fx-background-image: url("911.png"); }
+#sound { -fx-background-image: url("exhaust.jpg"); }
+#graph { -fx-background-image: url("graph.jpg"); }
+#buy { -fx-background-image: url("buy.jpg"); }
+#about { -fx-background-image: url("test.jpg"); -fx-background-size: 563px 175px;}
+#quiz { -fx-background-image: url("quiz.jpg"); }
+#credits { -fx-background-image: url("credits.jpg"); }
+
+.frameMenu:hover {
+    -fx-border-color: #1C95FF;
+    -fx-border-width: 10px;
+}
+
+.rectangle:hover {
+    -fx-opacity: 0.9;
+}

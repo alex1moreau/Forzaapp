@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forzaapp.quiz.FXML_QuizController">
+   <children>
+      <ImageView fitHeight="910.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/quiz1.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="500.0" layoutY="200.0" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#747575" height="500.0" opacity="0.9" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Text fx:id="question_nb" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Question 1" textAlignment="CENTER">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fx:id="question" fill="WHITE" layoutX="250.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How many class are there in the game ?" textAlignment="CENTER">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Group>
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="300.0" spacing="20.0">
+                                 <children>
+                                    <RadioButton fx:id="choice_0" mnemonicParsing="false" onAction="#handle0" text="1" textFill="WHITE" />
+                                    <RadioButton fx:id="choice_1" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" onAction="#handle1" text="4" textFill="WHITE" />
+                                    <RadioButton fx:id="choice_2" layoutX="10.0" layoutY="120.0" mnemonicParsing="false" onAction="#handle2" text="6" textFill="WHITE" />
+                                    <RadioButton fx:id="choice_3" layoutX="10.0" layoutY="139.0" mnemonicParsing="false" onAction="#handle3" text="50" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </Group>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets top="50.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </StackPane>
+            <Button fx:id="ok" mnemonicParsing="false" onAction="#okButton" styleClass="myButton" stylesheets="@../resources/StyleSheet.css" text="Ok" />
+         </children>
+      </VBox>
+      <Button fx:id="quit" layoutX="745.0" layoutY="725.0" mnemonicParsing="false" onAction="#loadHome" styleClass="myButton" stylesheets="@../resources/StyleSheet.css" text="Menu" />
+   </children>
+</AnchorPane>

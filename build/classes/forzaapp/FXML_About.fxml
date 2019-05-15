@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" stylesheets="@resources/StyleSheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forzaapp.FXML_AboutController">
+   <children>
+      <ImageView fitHeight="911.0" fitWidth="1639.0" layoutX="-27.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/about1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1400.0" layoutY="780.0" mnemonicParsing="false" onAction="#loadMenu" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Menu" />
+      <Pane layoutX="200.0" layoutY="193.0" opacity="0.6" prefHeight="210.0" prefWidth="400.0" styleClass="rectangle">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#747575" height="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <VBox prefHeight="210.0" prefWidth="400.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label text="Forza can be played in many ways." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="106.0" text="The campaign offers various races : it is a good way to start and begin to feel the game." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="963.0" layoutY="279.0" opacity="0.6" prefHeight="210.0" prefWidth="400.0" styleClass="rectangle">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#747575" height="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <VBox prefHeight="210.0" prefWidth="400.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label layoutX="30.0" layoutY="122.0" text="Multiplayer races represent a huge part of the game." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="30.0" text="You can choose between different settings such as game mod, class, ghost enemies..." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="638.0" layoutY="615.0" opacity="0.6" prefHeight="210.0" prefWidth="400.0" styleClass="rectangle">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#747575" height="210.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="400.0" />
+            <VBox prefHeight="210.0" prefWidth="400.0" spacing="10.0">
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <Label layoutX="30.0" layoutY="138.0" text="Turn10's team creates special events every week." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="30.0" text="During these events you have to run as fast as possible with an imposed car." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="88.0" text="The fastest worldwide win." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

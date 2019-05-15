@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forzaapp.FXML_HomeController">
+   <children>
+      <ImageView fitHeight="917.0" fitWidth="1614.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/menu_bg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="900.0" prefWidth="1600.0">
+         <children>
+            <FlowPane hgap="13.0" layoutX="83.0" layoutY="137.0" prefHeight="615.0" prefWidth="852.0" stylesheets="@resources/StyleSheet.css" vgap="13.0">
+               <children>
+                  <Pane prefHeight="162.0" prefWidth="563.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="563.0" styleClass="frameMenu" stylesheets="@resources/StyleSheet.css">
+                           <children>
+                              <Button id="about" mnemonicParsing="false" onAction="#loadAbout" prefHeight="162.0" prefWidth="563.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="about">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="collection" mnemonicParsing="false" onAction="#loadCollection" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="collection">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="p911" mnemonicParsing="false" onAction="#load911" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="911">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="185.0" prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="sound" mnemonicParsing="false" onAction="#loadSound" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="exhaust">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="298.0" layoutY="360.0" prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="graph" mnemonicParsing="false" onAction="#loadGraph" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="charts">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="535.0" prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="buy" mnemonicParsing="false" onAction="#loadBuy" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="buy">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="298.0" layoutY="535.0" prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="quiz" mnemonicParsing="false" onAction="#loadQuiz" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text fill="WHITE" layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="quiz">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="586.0" layoutY="535.0" prefHeight="162.0" prefWidth="275.0">
+                     <children>
+                        <StackPane alignment="TOP_LEFT" prefHeight="162.0" prefWidth="275.0" styleClass="frameMenu">
+                           <children>
+                              <Button id="credits" mnemonicParsing="false" onAction="#loadCredits" prefHeight="162.0" prefWidth="275.0" styleClass="menuButton" stylesheets="@resources/StyleSheet.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                        <Text layoutX="13.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="credits">
+                           <font>
+                              <Font name="Ubuntu" size="30.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </FlowPane>
+            <Button layoutX="1400.0" layoutY="780.0" mnemonicParsing="false" onAction="#quitApp" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Quit">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

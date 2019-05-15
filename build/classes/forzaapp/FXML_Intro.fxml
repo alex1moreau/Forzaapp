@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forzaapp.FXML_IntroController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/splash.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="welcomeBtn" layoutX="707.0" layoutY="700.0" mnemonicParsing="false" onAction="#welcome" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Welcome" />
+      <Pane fx:id="loginPane" layoutX="609.0" layoutY="305.0" prefHeight="257.0" prefWidth="385.0">
+         <children>
+            <ImageView fitHeight="256.0" fitWidth="441.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/carbon.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="257.0" prefWidth="385.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="loginField">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Text fill="WHITE" layoutX="40.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <PasswordField fx:id="passwordField">
+                     <VBox.margin>
+                        <Insets bottom="8.0" left="30.0" right="30.0" top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Label fx:id="label" textFill="RED">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#login" style="-fx-font-size: 25;" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Log in">
+                     <VBox.margin>
+                        <Insets left="131.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

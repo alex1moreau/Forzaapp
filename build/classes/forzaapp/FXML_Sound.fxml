@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forzaapp.FXML_SoundController">
+    <children>
+      <WebView fx:id="video" layoutX="284.0" layoutY="117.0" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="900.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/fpv.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="735.0" layoutY="780.0" mnemonicParsing="false" onAction="#loadMenu" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Menu" />
+      <Text layoutX="552.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sample of sound from different POV">
+         <font>
+            <Font name="Ubuntu" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="649.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can try to guess the POV with a headset">
+         <font>
+            <Font name="Ubuntu" size="20.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
