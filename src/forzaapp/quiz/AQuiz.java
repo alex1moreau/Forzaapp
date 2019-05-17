@@ -45,23 +45,24 @@ public class AQuiz
 
     /**
      * Getter for the question
-     * @return the question as {@code String}
+     * @return the question as String
      */
     public String getQuestion() { return new String (question); }
 
     /**
      * Getter for the correct answer
-     * @return the answer as {@code String}
+     * @return the answer as String
      */
     public String getCorrect() { return new String (correct); }
 
     /**
      * Getter for the array of all possible answers
-     * @return allAnswers as a string-array
+     * @return allAnswers as a String-array
      */
     public String[] getAllAnswers() { return allAnswers.clone(); }
 
-    /* (non-Javadoc)
+    /*
+     * Usefull to debug in consol
      * @see java.lang.Object#toString()
      */
     @Override

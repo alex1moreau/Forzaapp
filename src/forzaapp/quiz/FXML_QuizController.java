@@ -48,8 +48,6 @@ public class FXML_QuizController implements Initializable {
     
     /**
      * Initializes the controller class.
-     * @param url
-     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -66,8 +64,6 @@ public class FXML_QuizController implements Initializable {
     }
     
     private void verify(int usrAnswer) {
-        System.out.println(model.getAllAnswers(count-1)[usrAnswer]);
-        System.out.println(model.getCorrect(count-1));
         if (model.getAllAnswers(count-1)[usrAnswer].equals(model.getCorrect(count-1)))
             score++;
     }
