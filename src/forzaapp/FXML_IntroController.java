@@ -51,6 +51,7 @@ public class FXML_IntroController implements Initializable {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.hide(); //optional
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
     
