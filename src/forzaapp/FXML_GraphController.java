@@ -27,7 +27,7 @@ import javafx.stage.Stage;
  */
 public class FXML_GraphController implements Initializable {
     
-    @FXML private LineChart chart;
+    @FXML private LineChart<Number,Number> chart;
     
     /**
      * Initializes the controller class.

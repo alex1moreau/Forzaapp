@@ -15,7 +15,7 @@
             <Image url="@resources/chart.jpg" />
          </image>
       </ImageView>
-      <LineChart fx:id="chart" layoutX="259.0" layoutY="175.0" prefHeight="520.0" prefWidth="1077.0" style="-fx-background-color: white;">
+      <LineChart fx:id="chart" layoutX="259.0" layoutY="175.0" prefHeight="520.0" prefWidth="1077.0" style="-fx-background-color: white;" visible="false">
         <xAxis>
           <CategoryAxis side="BOTTOM" />
         </xAxis>
@@ -24,5 +24,10 @@
         </yAxis>
       </LineChart>
       <Button layoutX="1400.0" layoutY="780.0" mnemonicParsing="false" onAction="#loadMenu" styleClass="myButton" stylesheets="@resources/StyleSheet.css" text="Menu" />
+      <ImageView fitHeight="697.0" fitWidth="846.0" layoutX="383.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/dataChart.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
