@@ -4,7 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/alex/Documents/Github/Forzaapp/src/forzaapp/ForzaApp.java</file>
-            <file>file:/home/alex/Documents/Github/Forzaapp/src/forzaapp/FXML_GraphController.java</file>
+            <file>file:/home/alex/Documents/Github/Forzaapp/src/forzaapp/FXML_SoundController.java</file>
+            <file>file:/home/alex/Documents/Github/Forzaapp/src/forzaapp/FXML_HomeController.java</file>
             <file>file:/home/alex/Documents/Github/Forzaapp/src/forzaapp/quiz/AQuiz.java</file>
         </group>
     </open-files>
